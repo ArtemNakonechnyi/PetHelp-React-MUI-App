@@ -22,7 +22,7 @@ function Footer() {
           color: theme.palette.sideBarText,
         }}
       >
-        <Grid item="true" size={{ xs: 12, lg: 6 }}>
+        <Grid size={{ xs: 12, lg: 6 }}>
           <Box p={2}>
             <Typography variant="h6">About us</Typography>
             <Typography sx={{ marginBottom: "20px" }} variant="body1">
@@ -46,7 +46,7 @@ function Footer() {
             </Box>
           </Box>
         </Grid>
-        <Grid item="true" size={{ xs: 12, sm: 6, lg: 3 }}>
+        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
           <Box p={2}>
             <Typography variant="h6">Information</Typography>
             <Typography variant="body1">Lorem ipsum</Typography>
@@ -54,7 +54,7 @@ function Footer() {
             <Typography variant="body1">Terms & Conditions</Typography>
           </Box>
         </Grid>
-        <Grid item="true" size={{ xs: 12, sm: 6, lg: 3 }}>
+        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
           <Box p={2}>
             <Typography variant="h6">My Account</Typography>
             <Typography variant="body1">Initiatives & projects</Typography>
