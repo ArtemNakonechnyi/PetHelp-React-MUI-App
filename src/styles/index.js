@@ -1,3 +1,5 @@
+import { createTheme } from "@mui/material/styles";
+
 export const Colors = {
   primary: "#00adb5",
   secondary: "#00c7c0",
@@ -17,12 +19,49 @@ export const Colors = {
   black: "#000",
 };
 
-// TODO: define overrides object to create theme
-const overrides = { 
+const overrides = {
+  palette: {
+    primary: {
+      main: Colors.primary,
+    },
+    secondary: {
+      main: Colors.secondary,
+    },
+    footerBG: Colors.shaft,
+    sideBarText: Colors.dove_gray,
+    sideBarBorder: Colors.info,
+    background: {
+      default: Colors.body_bg,
+      paper: Colors.white,
+    },
+    text: {
+      primary: Colors.dark,
+      secondary: Colors.light,
+      black: Colors.black,
+      white: Colors.white,
+    },
+  },
+  components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: Colors.white,
+          color: Colors.dark,
+        },
+      },
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          backgroundColor: Colors.primary,
+          color: Colors.dove_gray,
+        },
+      },
+    },
+  },
 };
 
-// TODO: use overrides object to create theme
-// const theme =;
+const theme = createTheme(overrides);
 
 export { overrides };
 export default theme;
