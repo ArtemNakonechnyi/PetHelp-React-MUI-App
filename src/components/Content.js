@@ -40,8 +40,8 @@ function Content() {
         variant="masonry"
       >
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
-            <img src={`images/${item.img}`} alt={item.title} loading="lazy" />
+          <ImageListItem key={item.title}>
+            <img src={`${item.img}`} alt={item.title} loading="lazy" />
 
             <ImageListItemBar
               sx={{
