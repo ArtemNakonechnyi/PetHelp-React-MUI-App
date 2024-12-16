@@ -41,7 +41,7 @@ function Content() {
       >
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
-            <img src={`/images/${item.img}`} alt={item.title} loading="lazy" />
+            <img src={`./images/${item.img}`} alt={item.title} loading="lazy" />
 
             <ImageListItemBar
               sx={{
