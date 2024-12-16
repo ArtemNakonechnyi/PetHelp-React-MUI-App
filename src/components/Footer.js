@@ -12,12 +12,8 @@ function Footer() {
     <>
       <Grid
         container
-        py={4}
-        px={2}
-        mt={4}
-        mr={4}
-        ml={4}
         sx={{
+          padding: "2rem",
           backgroundColor: theme.palette.footerBG,
           color: theme.palette.sideBarText,
         }}

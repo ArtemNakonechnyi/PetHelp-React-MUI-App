@@ -2,12 +2,12 @@ import * as React from "react";
 import { IconButton, Stack, Divider } from "@mui/material";
 import { Favorite, Person, Notifications } from "@mui/icons-material";
 
-function ActionButtons() {
+function ActionButtons({ direction = "row", spacing = 2 }) {
   return (
     <Stack
       divider={<Divider orientation="vertical" flexItem />}
-      direction="row"
-      spacing={2}
+      direction={direction}
+      spacing={spacing}
     >
       <IconButton>
         <Favorite />

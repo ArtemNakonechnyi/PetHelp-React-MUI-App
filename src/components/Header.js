@@ -18,7 +18,7 @@ function Header() {
 
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{ height: isLargeScreen ? "120px" : "80px" }}>
       {isLargeScreen ? (
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Typography
@@ -53,14 +53,16 @@ function Header() {
           <Typography
             variant="h4"
             sx={{
-              marginLeft: "8rem",
+              marginLeft: "auto",
+              marginRight: "auto",
               color: theme.palette.secondary.main,
               minWidth: "150px",
               height: "100px",
-              padding: "10px",
+              padding: "0.5rem",
               display: "flex",
               alignItems: "center",
               fontFamily: "'Great Vibes', cursive",
+              textAlign: "center",
             }}
           >
             Cats & friends

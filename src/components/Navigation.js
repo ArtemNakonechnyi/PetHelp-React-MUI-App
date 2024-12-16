@@ -18,8 +18,14 @@ function Navigation() {
   return (
     <Stack
       direction={"row"}
-      spacing={2}
-      sx={{ width: "300px", color: "black" }}
+      //spacing={2}
+      //sx={{ width: "300px", color: "black" }}
+      sx={{
+        width: "80%",
+        maxWidth: "320px",
+        justifyContent: "space-between",
+        margin: "0 auto",
+      }}
     >
       <Button color="inherit" variant="text">
         HOME

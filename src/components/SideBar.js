@@ -38,7 +38,10 @@ function SideBar({ isSideBarOpen, setIsSideBarOpen }) {
         },
       }}
     >
-      <Box width="400px" p="2" textAlign="center" role="presentation">
+      <Box width={{
+        xs: "80vw",
+        sm: "400px",
+      }} p="2" textAlign="center" role="presentation">
         <List>
           <ListItem>
             <ListItemButton>

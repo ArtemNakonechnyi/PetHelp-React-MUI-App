@@ -7,7 +7,7 @@ function Banner() {
     <Box
       sx={{
         backgroundColor: theme.palette.background.default,
-        marginTop: "10rem ",
+        marginTop: { xs: "8rem", md: "11rem" },
         marginBottom: "3rem",
       }}
     >
