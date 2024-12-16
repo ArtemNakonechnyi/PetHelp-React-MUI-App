@@ -37,7 +37,7 @@ function Banner() {
               width: "100%",
               height: "auto",
             }}
-            src="/images/banner-cat1.png"
+            src={`${process.env.PUBLIC_URL}/images/banner-cat1.png`}
             alt="banner-cat"
             width="100%"
           />
